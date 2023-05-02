@@ -1,0 +1,101 @@
+______________________________________________________________________________________________
+
+# cat /proc/meminfo > systemStats.txt (this was typed in the terminal)
+
+______________________________________________________________________________________________
+
+MemTotal:        4026536 kB
+MemFree:          665460 kB
+MemAvailable:    2686124 kB
+Buffers:          165616 kB
+Cached:          2003788 kB
+SwapCached:            0 kB
+Active:          1861384 kB
+Inactive:        1203540 kB
+Active(anon):     898248 kB
+Inactive(anon):      336 kB
+Active(file):     963136 kB
+Inactive(file):  1203204 kB
+Unevictable:        2468 kB
+Mlocked:            2468 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               472 kB
+Writeback:             0 kB
+AnonPages:        878060 kB
+Mapped:           462220 kB
+Shmem:               940 kB
+KReclaimable:     135296 kB
+Slab:             208888 kB
+SReclaimable:     135296 kB
+SUnreclaim:        73592 kB
+KernelStack:        7916 kB
+PageTables:        16020 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2013268 kB
+Committed_AS:    3895376 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       34244 kB
+VmallocChunk:          0 kB
+Percpu:             1560 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    237568 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      210880 kB
+DirectMap2M:     3983360 kB
+DirectMap1G:     2097152 kB
+
+______________________________________________________________________________________________
+
+# top -b -n 1 >> systemStats.txt (this was typed in the terminal)
+
+______________________________________________________________________________________________
+
+top - 15:27:29 up  1:08,  0 users,  load average: 0.28, 0.52, 0.44
+Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 13.8 us, 13.8 sy, 13.8 ni, 58.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3932.2 total,    116.8 free,   1530.8 used,   2284.6 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2126.8 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 codespa+  20   0    1084      4      0 S   0.0   0.0   0:00.11 docker-init
+    7 codespa+  20   0    7232    512    448 S   0.0   0.0   0:00.00 sleep
+   22 root      20   0   12184   2916   1992 S   0.0   0.1   0:00.00 sshd
+   35 root      20   0 1378596  63916  38932 S   0.0   1.6   0:00.46 dockerd
+   79 root      20   0 1356396  45964  26776 S   0.0   1.1   0:00.61 containerd
+  285 codespa+  20   0    2612   1716   1612 S   0.0   0.0   0:00.00 sh
+  381 root      20   0    2612    532    464 S   0.0   0.0   0:00.00 sh
+  394 codespa+  20   0    2616    600    524 S   0.0   0.0   0:00.00 sh
+  403 codespa+  20   0  934456  68364  31844 S   0.0   1.7   0:04.57 node
+  430 codespa+  20   0  648016  50624  29612 S   0.0   1.3   0:02.78 node
+  544 codespa+  20   0   11.1g 250808  34936 S   0.0   6.2   1:56.66 node
+  685 codespa+  20   0  835808  38240  28676 S   0.0   0.9   0:00.50 node
+  844 codespa+  20   0    2612   1612   1512 S   0.0   0.0   0:00.01 sh
+  918 root      20   0    2612    528    460 S   0.0   0.0   0:00.00 sh
+ 1009 codespa+  20   0  590448  39556  26920 S   0.0   1.0   0:00.38 node
+ 1059 codespa+  20   0    2612   1648   1548 S   0.0   0.0   0:00.00 sh
+ 1152 root      20   0    2612    528    460 S   0.0   0.0   0:00.00 sh
+20158 codespa+  20   0   16492  11656   3452 S   0.0   0.3   0:00.12 bash
+24973 codespa+  20   0   10876   3612   3148 R   0.0   0.1   0:00.00 top
+24974 codespa+  20   0   10740   3660   3204 S   0.0   0.1   0:00.00 top
+
+______________________________________________________________________________________________
+
+# $ echo $BASH_VERSION >> systemStats.txt (this was typed in the terminal)
+
+______________________________________________________________________________________________
+
+5.0.17(1)-release
